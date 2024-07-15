@@ -36,7 +36,7 @@ userSchema.statics.signup = async function (email, username, password) {
   }
 
   const existsEmail = await this.findOne({ email });
-  const existsUsername = await this.findOne({ email });
+  const existsUsername = await this.findOne({ username });
 
   if (existsEmail) {
     throw Error("Email already exists");
@@ -48,7 +48,7 @@ userSchema.statics.signup = async function (email, username, password) {
   const salt = await bcrypt.genSalt(10);
   const hash = await bcrypt.hash(password, salt);
 
-  const user = await this.create({ email, password: hash });
+  const user = await this.create({ email,username, password: hash });
 
   return user;
 };
