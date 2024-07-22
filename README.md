@@ -17,9 +17,10 @@ STEP 3: install docker on your pc and then run docker-compose up
 Features TO-DO:
 
 1. Sort out workouts based on date                                                                              [ ]
-2. Drop down list when clicked on Exercise title.                                                               [ ] 
+2. Drop down list when clicked on Exercise title.                                                               [X] 
     - Implement pagination techniques for learning purposes.                                                    
 3. Take in username while registering and display that on top instead of email id.                              [X]
 4. OPTIONAL - create admin dash and can have users under them and can track each users workouts.                [ ]
-5. Styling and logos                                                                                            [ ]
+5. OPTIONAL - ADD friends feature to see what they workouts they did.
+6. Styling and logos                                                                                            [ ]
 
